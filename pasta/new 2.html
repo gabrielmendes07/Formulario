@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<title>formulário</title>
+<link rel="stylesheet" type="text/css" href="css/styleform.css">   
+<script src="js/form.js"></script>
+</head>
+<body>
+
+
+
+<h1 style="background-color:lightblue;">Formulário de solicitação de informação (Pessoa Física)</h1>
+  <div id="form">
+      <form name="forma1" action="">
+<h1>As informações abaixo são obrigatórias </h1>
+	  <table border="1">
+	 <td>
+	 Nome:<br><input type="text" name="nome" value=""  size="35"><br>
+   	  CPF:<br><input type="text" name="cpf" value=""  size="25"><br>
+
+	  
+<h2 style="background-color:lightblue;">Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se
+a opção for por RG, indicar órgão emissor e UF):</h2>
+
+	 Tipo do documento:<br><input type="text" name="nome" value=""  size="35"><br>
+	 
+	 Numero:<br><input type="text" name="nome" value=""  size="10"><br>
+	 
+	 Endereco eletronico (e-mail)::<br><input type="text" name="nome" value=""  size="40"><br>  
+	 
+	 Endereco fisico (Rua, numero, complemento, Bairro):<br><input type="text" name="nome" value=""  size="50"><br>
+	 
+	 Cidade:<br><input type="text" name="nome" value=""  size="30"><br>
+	 
+	 CEP:<br><input type="text" name="nome" value=""  size="20"><br>
+	 
+	 UF:<br><input type="text" name="nome" value=""  size="5"><br>
+	 
+	 Estado:<br><input type="text" name="nome" value=""  size="35"><br>
+	Pais:<br><input type="text" name="nome" value=""  size="35"><br>
+
+	</td>
+	 </table>
+	
+	
+	
+	<h3 style="background-color:lightblue;"> Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços </h3>
+   <table border="2">
+    <td>
+
+Sexo:<br> 
+Masculino<input type="radio" name="sexo" value=-"masculino"> Feminino<input type="radio" name ="sexo" value="feminino"><br>
+
+<h4> Escolaridade:</h4>
+	 Sem instrução formal<input type="radio" name="escolaridade" value="sem isntrução formal"> Ensino Fundamental <input type="radio" name ="escolaridade" value="Ensino fundamental"> Ensino Médio <input type="radio" name="escolaridade" value="Ensino Médio"> Ensino superior<input type="radio" name="escolaridade" value="Ensino Médio"> Especialização <input type="radio" name="escolaridade" value="especialização"> Mestrado <input type="radio" name="escolaridade" value="Mestrado"><br>
+ 
+ 
+<h5>Data do seu aniversario:</br>
+	  <input type="date" name="data_aniversario"><br>
+	  
+ <h6> Ocupação principal/profissão:</h6>
+      Empregado-setor privado<input type="radio" name="profissao" value=""> Jornalista <input type="radio" name="profissao" value=""> Membro de partido politico <input type="radio" name="profissao" value=""> Representante de sindicato <input type="radio" name="profissao" value="">Profis.Liberal/autónomo<input type="radio" name="profissao" value=""> Pesquisador<input type="radio" name="profissao" value=""> professor<input type="radio" name="profissao" value=""> Estudante<input type="radio" name="profissao" value=""> Empresário(a)/empreendedor(a)<input type="radio" name="profissao" value=""> servidor publico federal<input type="radio" name="profissao" value=""> Servidor público estadual<input type="radio" name="profissao" value=""> servidor público municipal <input type="radio" name="profissao" value=""> Membro de ONG nascional<input type="radio" name="profissao" value="">Menbro de ONG internacional<input type="radio" name="profissao"value="">Outras <input type="radio" name="profissao" value=""><br>
+ 
+<h3>Telefone:</h3> <input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
+  </td>
+	 </table>
+	
+<h4 style="background-color:lightblue;"> Especificação do pedido de acesso á informação</h4>  
+	 <table border="3">
+	<td>
+<h2>Órgão/Entidade destinatário do pedido:</h2><br><input type="text" name="nome" value=""  size="50"><br>
+    
+<h2>forma preferencial de recebimento da resposta:</h2>
+Buscar/consultar pessoalmente<input type="radio" name="confirmacao" value="">E-mail <input type="RADIO" name="confirmacao" value=""> por carta(com custo) <input type="radio" name="confirmacao" value=""><br>
+
+<h3>Especificação do pedido:</h3>
+	  <textarea name="mensagem" rows="10" cols="36"></textarea><br><br>
+	 <button type="button" onclick="validateform()">Click Me!</button>
+
+    </td>
+    </table>
+
+
+</style>
+ </form>
+ </div>
+</body>
+</html> 
